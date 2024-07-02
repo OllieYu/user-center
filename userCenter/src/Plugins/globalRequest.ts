@@ -8,6 +8,7 @@ import {message} from "antd";
  */
 const request = extend({
   credentials: 'include',
+  prefix: process.env.NODE_ENV === 'production' ? 'http://user-backend.code-nav.cn' : undefined
 })
 
 /**
